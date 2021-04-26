@@ -74,6 +74,8 @@
 
 15. == is an equality comparison that will perform type conversion, whereas === is an equality comparison that will not automatically try to convert datatypes. So if the two datatypes are different, then === immediately fails.
 
-17. We end up with an array containing [2, 4, 6]. We pass in an array [1, 2, 3], and in the modifyArray function we push to newArr the result of applying the function doSomething to each item in our original array, which will just multiply each item by 2.
 
-18. The console will print "1 4 3 2", with a new line in between each number. This is because the 1 gets printed first, the 2 is set to wait 1000ms before printing, and the 3 is set to wait 0ms, which makes it wait until the next event cycle (or the shortest possible delay), and so 4 has the chance to get printed first before it's time to print 3.
+\17. We end up with an array containing [2, 4, 6]. We pass in an array [1, 2, 3], and in the modifyArray function we push to newArr the result of applying the function doSomething to each item in our original array, which will just multiply each item by 2.
+
+
+\18. The console will print "1 4 3 2", with a new line in between each number. This is because the 1 gets printed first, the 2 is set to wait 1000ms before printing, and the 3 is set to wait 0ms, which makes it wait until the next event cycle (or the shortest possible delay), and so 4 has the chance to get printed first before it's time to print 3.
