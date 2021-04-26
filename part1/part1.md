@@ -1,4 +1,4 @@
-##1a
+## 1a
 1. line 9 prints "values added: 20"
    
 2. line 13 prints "values added: 20" as well
@@ -11,7 +11,7 @@
 
 6. Similar to 5, but we wouldn't even be able to access result since it only exists within the if block.
 
-##1b
+## 1b
 1. line 12 will print "3", which is just the number of times the for loop iterated (and it looped 3 times because we had 3 things in the prices array passed in). We can print i because it was defined using var, meaning it can be accessed anywhere within the function it was defined in.
 
 2. line 13 will print "150". Since discountedPrice has function scope, it persists throughout the function, and since the last price processed was 300 * (1-0.5), we print 150.
